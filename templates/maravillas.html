@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+{% block contenido %}
     <div class="row">
         <div class="m-2 text-center">
             <h3><strong>Las 7 maravillas del mundo</strong></h3>
@@ -18,8 +18,7 @@
                 existe un listado que data del siglo II antes de Cristo que reconoce siete maravillas del mundo.</p>
             <p>Pero, con el cambio de siglo, una iniciativa dio a conocer los siete sitios más destacados. Entre ellos 3
                 destinos latinoamericanos.</p>
-            <img src="static/img/muralla.webp"
-                alt="La gran muralla china" class="img-fluid rounded">
+            <img src="static/img/muralla.webp" alt="La gran muralla china" class="img-fluid rounded">
         </div>
     </div>
 
@@ -130,6 +129,14 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-4 offset-4 p-2 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fePHLgOJ2iY?si=lMb4OomzmSVoXT8q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>

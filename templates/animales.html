@@ -24,7 +24,9 @@
 </head>
 
 <body class="bg-light">
-
+{% block contenido %}
+    
+{% endblock %}
     <div class="text-center mt-4">
         <h3><strong>Lo maravilloso del reino animal</strong></h3>
         <p class="px-4">El reino animal es una de las mayores expresiones de la vida en la Tierra.</p>
@@ -43,13 +45,15 @@
                 <p>Los delfines son mamíferos marinos muy inteligentes que viven en grupos llamados manadas.
                     Se comunican mediante sonidos y saltos fuera del agua. Además, tienen una gran capacidad de
                     aprendizaje.</p>
-                <img src="static/img/delfin.webp" alt="Delfín" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/delfin.webp" alt="Delfín" class="img-fluid rounded"
+                    style="width: 300px; height: 200px; object-fit: cover;">
             </div>
             <div class="col-md-6">
                 <h5><strong>Tiburón blanco</strong></h5>
                 <p>Es uno de los depredadores más poderosos del océano. Tiene un olfato muy desarrollado que le permite
                     detectar presas a kilómetros de distancia y puede nadar a gran velocidad.</p>
-                <img src="static/img/tiburon.webp" alt="Tiburón blanco" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/tiburon.webp" alt="Tiburón blanco" class="img-fluid rounded"
+                    style="width: 300px; height: 200px; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -61,14 +65,16 @@
                 <h5><strong>Elefante africano</strong></h5>
                 <p>Es el animal terrestre más grande del mundo. Se caracteriza por sus enormes orejas, su trompa fuerte
                     y su gran inteligencia. Viven en manadas y muestran comportamientos sociales muy complejos.</p>
-                <img src="static/img/elefante.webp" alt="Elefante africano" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/elefante.webp" alt="Elefante africano" class="img-fluid rounded"
+                    style="width: 300px; height: 200px; object-fit: cover;">
             </div>
             <div class="col-md-6">
                 <h5><strong>Tigre de Bengala</strong></h5>
                 <p>Es un felino fuerte y ágil que vive en selvas y bosques. Es un excelente cazador y puede recorrer
                     grandes distancias en busca de alimento. Su pelaje anaranjado con rayas negras es muy
                     característico.</p>
-                <img src="static/img/bengala.webp" alt="Tigre de Bengala" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/bengala.webp" alt="Tigre de Bengala" class="img-fluid rounded"
+                    style="width: 300px; height: 200px; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -80,16 +86,40 @@
                 <h5><strong>Águila real</strong></h5>
                 <p>Con su gran tamaño y aguda vista, el águila real es una de las aves más majestuosas del mundo. Puede
                     volar a grandes alturas y cazar presas con gran precisión.</p>
-                <img src="static/img/aguila-real-o-aguila-dorada_861_4_orig.webp" alt="Águila real" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/aguila-real-o-aguila-dorada_861_4_orig.webp" alt="Águila real"
+                    class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
             </div>
             <div class="col-md-6">
                 <h5><strong>Colibrí</strong></h5>
                 <p>Es una de las aves más pequeñas que existen. Puede mover sus alas tan rápido que parece quedarse
                     suspendido en el aire mientras se alimenta del néctar de las flores.</p>
-                <img src="static/img/colibri.webp" alt="Colibrí" class="img-fluid rounded" style="width: 300px; height: 200px; object-fit: cover;">
+                <img src="static/img/colibri.webp" alt="Colibrí" class="img-fluid rounded"
+                    style="width: 300px; height: 200px; object-fit: cover;">
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-3 p-2 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KRB1l08bg88?si=Xdo2S9zo6aGdfdgV"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col-3 offset-1 p-2 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JbZUFhbzm_Q?si=-kL3eXw2ggn_7LzM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col-3 offset-1 p-2 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4yzkY8pHNjg?si=4XRg2E47ezBWKilf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
