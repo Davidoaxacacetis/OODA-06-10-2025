@@ -12,7 +12,7 @@ def tiempo():
 
 @app.route("/maravillas-del-mundo")
 def maravillas():
-    return render_template ("index1.html")
+    return render_template ("maravillas.html")
 
 @app.route("/animales-exoticos")
 def animales():
