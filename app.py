@@ -16,11 +16,11 @@ def maravillas():
 
 @app.route("/animales-exoticos")
 def animales():
-    return render_template ("index1.html")
+    return render_template ("animales.html")
 
 @app.route("/acerca-de")
 def acecade():
-    return render_template ("index1.html")
+    return render_template ("acercade.html")
 
 if __name__ =='__main__':
     app.run(debug=True)
