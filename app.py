@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask (__name__) 
 
@@ -21,6 +21,14 @@ def animales():
 @app.route("/acerca-de")
 def acecade():
     return render_template ("acercade.html")
+
+@app.route("/registrate")
+def registro():
+    return render_template ("registro.html")
+
+@app.route("/inicia-sesion")
+def sesion():
+    return render_template ("inicia.html")
 
 if __name__ =='__main__':
     app.run(debug=True)
