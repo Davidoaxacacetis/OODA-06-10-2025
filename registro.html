@@ -10,145 +10,159 @@
 </head>
 
 <body>
-    <main class="container col-md-6 offset-md-3 border border-dark">
+    <main class="container">
         <h1 class="text-center">Mi primer formulario.</h1>
         <h4 class="text-center">Crea una cuenta</h4>
         <h6 class="text-center">Es fácil y rápido.</h6>
-        <section >
-            <form method="post" action="{{url_for('esgister_ser')}}">
-                <div class="row">
-                    <div class="col-md-3 offset-md-3">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Tu nombre/s">
-                    </div>
-                    <div class="col-md-3 ">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Tu apellido/s">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 offset-md-3">
-                        <label for="validationCustom04" class="form-label">Dia</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Porfavor ingresa un dia valido.
+        <section>
+            <div class="card-body p-4 p-md-5">
+                <form method="post" action="{{url_for('/resgistrame')}}">
+                    <div class="row">
+                        <div class="col-md-3 offset-md-3">
+                            <input type="text" required name="name" id="name" class="form-control rounded-pill"
+                                placeholder="Tu nombre/s" value = "{{request.form.get('name','')}}">
+                        </div>
+                        <div class="col-md-3 ">
+                            <input type="text" required name="apellido" id="apellido" class="form-control rounded-pill"
+                                placeholder="Tu apellido/s" value = "{{request.form.get('apellido','')}}">
                         </div>
                     </div>
-                    <div class="col-md-2 ">
-                        <label for="validationCustom04" class="form-label">Mes</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Porfavor ingresa un mes valido.
+                    <div class="row">
+                        <div class="col-md-2 offset-md-3">
+                            <label for="Dia" class="form-label">Dia</label>
+                            <select class="form-select" id="validationCustom04" name="Dia" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Porfavor ingresa un dia valido.
+                            </div>
+                        </div>
+                        <div class="col-md-2 ">
+                            <label for="validationCustom04" class="form-label">Mes</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Porfavor ingresa un mes valido.
+                            </div>
+                        </div>
+                        <div class="col-md-2 ">
+                            <label for="validationCustom04" class="form-label">Año</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Porfavor ingresa un año valido.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-2 ">
-                        <label for="validationCustom04" class="form-label">Año</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Porfavor ingresa un año valido.
-                        </div>
+                    <div class="col-md-6 offset-md-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="text" required class="form-control rounded-pill" name="email" id="email" placeholder="Email"
+                            minlength="2" value = "{{request.form.get('email','')}}">
                     </div>
-                </div>
-                <div class="col-md-6 offset-md-3">
-                    <label for="nombre" class="form-label">Correo</label>
-                    <input type="text" required class="form-control" value="{{request.form.get('username','')}}" name="email" id="email" placeholder="Email" minlength="2">
-                </div>
-                <div class="col-md-6 offset-md-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" required class="form-control" id="exampleInputPassword1" minlength="8" 
-                        placeholder="No la compartas">
-                </div>
-                <div class="form-check col-md-1 offset-md-3 p-2 form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                        value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Hombre
-                    </label>
-                </div>
-                <div class="form-check col-md-1 p-2 form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                        value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                        Mujer
-                    </label>
-                </div>
-                <div class="form-check col-md-1 p-2 form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                        value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                        Otro
-                    </label>
-                </div>
+                    <div class="col-md-6 offset-md-3">
+                        <label for="Contraseña" class="form-label">Password</label>
+                        <input type="password" required class="form-control rounded-pill" name="contraseña" id="contraseña" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="8"
+                            placeholder="No la compartas" value = "{{request.form.get('contraseña','')}}">
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                        <label for="confirmarcontra" class="form-label">Confirm password</label>
+                        <input type="password" required class="form-control rounded-pill" name="confirmarcontra" id="confirmarcontra"  minlength="8"
+                            placeholder="Confirma tu Contraseña" value = "{{request.form.get('confirmarcontra','')}}">
+                    </div>
+                    <div class="form-check col-md-1 offset-md-3 p-2 form-check-inline">
+                        <input class="form-check-input " required type="radio" name="Hombre" id="Hombre"
+                            value="option1" checked>
+                        <label class="form-check-label" for="Hombre">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="form-check col-md-1 p-2 form-check-inline">
+                        <input class="form-check-input" required type="radio" name="Mujer" id="Mujer"
+                            value="option2">
+                        <label class="form-check-label" for="Mujer">
+                            Mujer
+                        </label>
+                    </div>
+                    <div class="form-check col-md-1 p-2 form-check-inline">
+                        <input class="form-check-input" required type="radio" name="Otro" id="Otro"
+                            value="option3">
+                        <label class="form-check-label" for="Otro">
+                            Otro
+                        </label>
+                    </div>
 
-                <div class="col-md-6 offset-md-3 text-center">
-                    <p>Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a
-                        Facebook. <a href="#">Más información</a></p>
-                </div>
-                <div class="mb-2 col-md-6 offset-md-3 text-center">
-                    Al hacer clic en "Registrarte", aceptas nuestras <a href="#">Condiciones</a>, la <a href="#">la Politica de privacidad</a> y la <a href="#">Politica de cookies</a>. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.
-                </div>
-        <div class="col-md-6 offset-md-3 p-2">
-            <a class="btn btn-success " tabindex="0" role="button" >Resgistrate</a>
-            <a href="inicia-sesion" class="btn btn-primary " tabindex="0" role="button" >¿Ya tienes cuenta?</a>
-        </div>
+                    <div class="col-md-6 offset-md-3 text-center">
+                        <p>Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto
+                            a
+                            Facebook. <a href="#">Más información</a></p>
+                    </div>
+                    <div class="mb-2 col-md-6 offset-md-3 text-center">
+                        Al hacer clic en "Registrarte", aceptas nuestras <a href="#">Condiciones</a>, la <a href="#">la
+                            Politica de privacidad</a> y la <a href="#">Politica de cookies</a>. Es posible que te
+                        enviemos notificaciones por SMS, que puedes desactivar cuando quieras.
+                    </div>
+                    <div class="col-md-6 offset-md-3 p-2">
+                        <a class="btn btn-success " tabindex="0" role="button">Resgistrate</a>
+                        <a href="inicia-sesion" class="btn btn-primary " tabindex="0" role="button">¿Ya tienes
+                            cuenta?</a>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </section>
     </main>
 
