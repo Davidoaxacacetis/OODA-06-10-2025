@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de</title>
-</head>
+{% extends "base.html" %}
+{% block titulo %}Acerca de {% endblock %}
+{% block contenido %}
 
 
-
-<body>
-    {% block contenido %}
-    
-{% endblock %}
     <h2>Me gustan las carreras, mi circuito favorito es nurburgring. Este video es mio jugando Gran Turiso 7 en Playstation 5 con el colante Logitech g29.</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJkdZy-Ovuc?si=ObVEEgoJgVgIoI-A"
         title="YouTube video player" frameborder="0"
@@ -22,6 +12,4 @@
     <h3>Grupo: 3-D</h3>
     <h3>Carrea universitaria esperada: Ingieneria en construcción civil.</h3>
     <h2>Oaxaca Orona David Adrián</h2>
-</body>
-
-</html>
+{% endblock %}
