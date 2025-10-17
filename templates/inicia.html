@@ -17,11 +17,11 @@
                 <form>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo</label>
-                        <input type="email" class="form-control rounded-pill" name="email" id="email" placeholder="Email">
+                        <input type="email" class="form-control rounded-pill" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="No la compartas">
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control rounded-pill" id="contraseña" name="contraseña" pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,16}"  placeholder="No la compartas">
                     </div>
                     <div class="d-grid gap-2">
                         <a href="/inicia-sesion" class="btn btn-primary rounded-pill">Inicia sesión</a>
